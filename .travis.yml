@@ -1,0 +1,8 @@
+language: node_js
+node_js:
+  - '0.8'
+  - '0.10'
+before_install:
+  - currentfolder=${PWD##*/}
+  - if [ "$currentfolder" != 'generator-express-typescript-angular' ]; then cd .. && eval "mv $currentfolder generator-express-typescript-angular" && cd generator-express-typescript-angular; fi
+
